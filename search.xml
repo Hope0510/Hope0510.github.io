@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Hexo博客(主题Buttetfly)更换电脑后快速配置</title>
+      <link href="2021/03/07/Hexo%E5%8D%9A%E5%AE%A2-%E4%B8%BB%E9%A2%98Buttetfly-%E6%9B%B4%E6%8D%A2%E7%94%B5%E8%84%91%E5%90%8E%E5%BF%AB%E9%80%9F%E9%85%8D%E7%BD%AE/"/>
+      <url>2021/03/07/Hexo%E5%8D%9A%E5%AE%A2-%E4%B8%BB%E9%A2%98Buttetfly-%E6%9B%B4%E6%8D%A2%E7%94%B5%E8%84%91%E5%90%8E%E5%BF%AB%E9%80%9F%E9%85%8D%E7%BD%AE/</url>
+      
+        <content type="html"><![CDATA[<p>1.备份原电脑中如下文件</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">scaffolds&#x2F;#模板文件</span><br><span class="line">source&#x2F;#资源文件，主要是文章</span><br><span class="line">themes&#x2F;butterfly&#x2F;source&#x2F;img&#x2F;#主题下图片资源夹</span><br><span class="line">_config.butterfly.yml#主题配置文件</span><br><span class="line">_config.yml#配置文件</span><br><span class="line">.gitignore</span><br></pre></td></tr></table></figure><p>![Hexo更换电脑 01_2021-03-07_11-49-27](D:\Users\29490\Pictures\hexo用图\Hexo博客-主题Buttetfly-更换电脑后快速配置\Hexo更换电脑 01_2021-03-07_11-49-27.png)</p><p>![Hexo更换电脑 02_2021-03-07_11-50-22](D:\Users\29490\Pictures\hexo用图\Hexo博客-主题Buttetfly-更换电脑后快速配置\Hexo更换电脑 02_2021-03-07_11-50-22.png)</p><p>2.新电脑上安装Git与Node.js</p><p>3.安装hexo</p><p>输入命令</p><p><code>npm install hexo-cli -g</code></p><p>初始化hexo</p><p><code>hexok init </code></p><p>安装依赖包</p><p><code>npm install</code></p><p>4.安装插件</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1.搜索插件</span><br><span class="line">npm install hexo-generator-search --save</span><br><span class="line">2.字数统计、阅读时长插件</span><br><span class="line">npm i --save hexo-wordcount</span><br><span class="line">3.部署上传插件</span><br><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure><p>5.用备份文件替换对应文件</p><p>6.输入命令<code>hexo s</code>，测试是否正常</p><p>7.生成SSH，添加到Github</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">1.设置Github用户名与电子邮箱地址</span><br><span class="line">git config --global user.name &quot;yourname&quot;</span><br><span class="line">git config --global user.email &quot;youremail&quot;</span><br><span class="line">2.查看用户名&#x2F;用户邮箱地址设置，检查是否正确</span><br><span class="line">git config user.name</span><br><span class="line">git config user.email</span><br><span class="line">3.生成SSH</span><br><span class="line">ssh-keygen -t rsa -C &quot;youremail&quot;</span><br><span class="line">4.查看SSH</span><br><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> Butterfly </tag>
+            
+            <tag> 更换电脑 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Visio2016与Office2016同时安装不兼容问题的解决方案</title>
+      <link href="2021/02/28/Visio2016%E4%B8%8EOffice2016%E5%90%8C%E6%97%B6%E5%AE%89%E8%A3%85%E4%B8%8D%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
+      <url>2021/02/28/Visio2016%E4%B8%8EOffice2016%E5%90%8C%E6%97%B6%E5%AE%89%E8%A3%85%E4%B8%8D%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
+      
+        <content type="html"><![CDATA[<p><strong>问题描述</strong></p><p><em>很抱歉，无法安装office，因为您的计算机上已经安装了office程序：</em><br><em>Microsoft Office 32-bit Components 2016</em><br><em>Microsoft Visio Professional 2016</em><br><em>32位和64位版本的Office程序不兼容，因此您一次只能安装一种类型。</em><br><em>请尝试安装64位版本的Office，或卸载其他64位Office程序，然后再尝试此安装。</em></p><p><strong>步骤</strong>（先卸载干净电脑中之前安装的Office）</p><ol><li><p>下载以下两个安装包，并解压。</p><p><img src="https://img.imgdb.cn/item/603b16445f4313ce2587abc7.png"></p><p><a href=":https://pan.baidu.com/s/1ZlVaoPo3bbSzFj_J2C1yZQ">百度网盘</a> 提取码：<code>31vf</code></p></li><li><p>首先安装Visio2016。打开Visio解压后文件夹，以管理员身份运行setup.exe。</p><p><img src="https://img.imgdb.cn/item/603b16d75f4313ce25881f36.png"></p><p>选择自定义安装</p><p><img src="https://img.imgdb.cn/item/603bb2805f4313ce25e8c10c.png"></p><p>文件位置(F)，点浏览，选择安装路径(若直接将盘符由<code>C</code>修改为<code>D</code>，后面可能会因目标路径未创建而弹窗警告，此时可直接忽略，不用处理)，立即安装。</p><p><img src="https://img.imgdb.cn/item/603bb2805f4313ce25e8c10f.png"></p><p>等待安装…</p><p><img src="https://img.imgdb.cn/item/603bb2805f4313ce25e8c111.png"></p><p>安装完成，点关闭。</p><p><img src="https://img.imgdb.cn/item/603bb2805f4313ce25e8c113.png"></p></li><li><p>然后安装Office2016，打开Office解压后文件夹，以管理员身份运行setup.exe。</p><p><img src="https://img.imgdb.cn/item/603bbc905f4313ce25ee64b2.png"></p><p>选择自定义安装</p><p><img src="https://img.imgdb.cn/item/603bbc905f4313ce25ee64b5.png"></p><p>安装选项(N)，<strong>将Office共享功能下的Business Connectivity Services设置为不可用</strong>，其他组件可根据需要安装。因先安装了Visio，这里Office的安装位置应该已自动设置为与Visio相同的路径了，故文件位置可不用更改，立即安装。</p><p><img src="https://img.imgdb.cn/item/603bbc905f4313ce25ee64b9.png"></p><p>参考设置<img src="https://img.imgdb.cn/item/603bbc905f4313ce25ee64bb.png"></p><p>文件位置已自动设定好，不再需更改。   <img src="https://img.imgdb.cn/item/603bbc905f4313ce25ee64bd.png"></p><p>等待安装…   <img src="https://img.imgdb.cn/item/603bbca65f4313ce25ee7442.png"></p><p>安装完成，点关闭。   <img src="https://img.imgdb.cn/item/603bbca65f4313ce25ee7445.png"></p><p>4.最后利用KMS完成激活</p><p>复制安装包中的<code>office2016激活工具.exe</code>至Visio/Office安装目录</p><p><img src="https://img.imgdb.cn/item/603bc6a65f4313ce25f3fa13.png"></p><p><img src="https://img.imgdb.cn/item/603bc6a65f4313ce25f3fa15.png"></p><p>提示目标文件夹访问被拒绝，点继续(C)。</p><p><img src="https://img.imgdb.cn/item/603bc6a65f4313ce25f3fa18.png"></p><p>以管理员身份运行<code>office2016激活工具.exe</code>，点永久体验Windows和Office正版进行激活。</p><p><img src="https://img.imgdb.cn/item/603bc6a65f4313ce25f3fa1b.png"></p><p>激活过程多次弹出警告窗口，确定即可</p><p><img src="https://img.imgdb.cn/item/603bc6a65f4313ce25f3fa10.png"></p><p>激活完成，点确定关闭窗口。</p><p><img src="https://img.imgdb.cn/item/603bc83f5f4313ce25f4b3f4.png"></p><p>打开office，在账户中查看激活信息，已显示激活的产品。</p><p><img src="https://img.imgdb.cn/item/603bc83f5f4313ce25f4b3f8.png"></p></li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Visio </tag>
+            
+            <tag> Office </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>手机与电脑局域网共享</title>
+      <link href="2020/11/21/%E6%89%8B%E6%9C%BA%E4%B8%8E%E7%94%B5%E8%84%91%E5%B1%80%E5%9F%9F%E7%BD%91%E5%85%B1%E4%BA%AB/"/>
+      <url>2020/11/21/%E6%89%8B%E6%9C%BA%E4%B8%8E%E7%94%B5%E8%84%91%E5%B1%80%E5%9F%9F%E7%BD%91%E5%85%B1%E4%BA%AB/</url>
+      
+        <content type="html"><![CDATA[<h3 id="平台-软件"><a href="#平台-软件" class="headerlink" title="平台/软件"></a>平台/软件</h3><ul><li><p>Android端：</p><ul><li><p>【推荐】<a href="https://wwa.lanzous.com/itnDIilxvoh">FV文件浏览器</a>    密码：97bg</p></li><li><p><a href="">ES文件浏览器</a>     密码：</p></li></ul></li><li><p>笔记本电脑端：Win10家庭版</p></li></ul><h3 id="1-创建Windows账户"><a href="#1-创建Windows账户" class="headerlink" title="1.创建Windows账户"></a>1.创建Windows账户</h3><p>​    <strong>设置&gt;账户&gt;家庭和其他用户&gt;将其他人添加到这台电脑</strong>，输入用户名、密码并填写安全问题，最后点下一步即可。</p><p><img src="https://pic.downk.cc/item/5fb89adcb18d6271133e829b.png"></p><h3 id="2-创建共享文件"><a href="#2-创建共享文件" class="headerlink" title="2.创建共享文件"></a>2.创建共享文件</h3><p>在磁盘任意位置新建一文件夹，然后右键该文件夹<strong>属性&gt;共享&gt;高级共享(D)…&gt;共享此文件夹&gt;确定&gt;共享(S)…&gt;添加&gt;权限级别【修改为读取/写入】&gt;共享(H)&gt;完成&gt;关闭</strong></p><p><img src="https://pic.downk.cc/item/5fb89f4db18d6271133f981e.png"></p><p><img src="https://pic.downk.cc/item/5fb89f4db18d6271133f9820.png"></p><p><img src="https://pic.downk.cc/item/5fb89f4db18d6271133f9822.png"></p><p><img src="https://pic.downk.cc/item/5fb89f4db18d6271133f9824.png"></p><h3 id="3-查看当前局域网地址"><a href="#3-查看当前局域网地址" class="headerlink" title="3.查看当前局域网地址"></a>3.查看当前局域网地址</h3><p>随个人情况有所不同，我的网络情况：笔记本电脑连校园网，手机通过笔记本的移动热点与笔记本电脑连接。因此我当前的局域网地址为笔记本电脑移动热点(即本地连接*10)的IPv4地址</p><p><img src="https://pic.downk.cc/item/5fb8aa1eb18d627113424299.png"></p><p><strong>若电脑有安装火绒安全软件，需关闭其共享访问防护！！！</strong></p><p><img src="https://img.imgdb.cn/item/603743075f4313ce25e5349e.png"></p><h3 id="4-FV文件浏览器连接共享文件夹"><a href="#4-FV文件浏览器连接共享文件夹" class="headerlink" title="4.FV文件浏览器连接共享文件夹"></a>4.FV文件浏览器连接共享文件夹</h3><p><img src="https://pic.downk.cc/item/5fb8a782b18d627113419e74.png"></p><p><img src="https://pic.downk.cc/item/5fb8a782b18d627113419e76.png"></p><p><img src="https://pic.downk.cc/item/5fb8a782b18d627113419e78.png"></p><p><img src="https://pic.downk.cc/item/5fb8a782b18d627113419e7a.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 系列文章 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Win10 </tag>
+            
+            <tag> 局域网 </tag>
+            
+            <tag> Andriod </tag>
+            
+            <tag> FV文件浏览器 </tag>
+            
+            <tag> ES </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Win10家庭版升级至专业版</title>
+      <link href="2020/11/21/Win10%E5%AE%B6%E5%BA%AD%E7%89%88%E5%8D%87%E7%BA%A7%E8%87%B3%E4%B8%93%E4%B8%9A%E7%89%88/"/>
+      <url>2020/11/21/Win10%E5%AE%B6%E5%BA%AD%E7%89%88%E5%8D%87%E7%BA%A7%E8%87%B3%E4%B8%93%E4%B8%9A%E7%89%88/</url>
+      
+        <content type="html"><![CDATA[<p><strong>密钥</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">VK7JG-NPHTM-C97JM-9MPGT-3V66T</span><br><span class="line">J7QT3-3GCPG-9GVWT-CH2XR-GMRJM#2020-11-21使用时有效</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 其他 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Win10 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Solidworks异常-VBE6EXT-OLB</title>
+      <link href="2020/07/31/Solidworks%E6%8F%90%E7%A4%BA%E2%80%9CVBE6EXT-OLB%E2%80%9D%E4%B8%8D%E8%83%BD%E8%A2%AB%E5%8A%A0%E8%BD%BD/"/>
+      <url>2020/07/31/Solidworks%E6%8F%90%E7%A4%BA%E2%80%9CVBE6EXT-OLB%E2%80%9D%E4%B8%8D%E8%83%BD%E8%A2%AB%E5%8A%A0%E8%BD%BD/</url>
+      
+        <content type="html"><![CDATA[<p>Solidworks2016启动时提示“VBE6EXT.OLB”不能加载，这是由于VBA相关文件缺失导致的。</p><ol><li>首先打开C:\Program Files\Common Files\Microsoft Shared\VBA，在VBA文件夹里只有一个VBA7.1文件夹，这里缺少一个VBE6EXT.OLB。<br><img src="https://pic3.superbed.cn/item/5dd89e818e0e2e3ee9dda1ad.png"></li><li>打开C:\Program Files (x86)\Common Files\microsoft shared\VBA\VBA6。<br><img src="https://pic3.superbed.cn/item/5dd89e818e0e2e3ee9dda1bc.png"></li><li>将VBA6文件夹里的VBE6EXT.OLB文件复制到第一步中的VBA7.1文件夹内即可。<br><img src="https://pic3.superbed.cn/item/5dd89e818e0e2e3ee9dda1c6.png"><br><img src="https://pic3.superbed.cn/item/5dd89e818e0e2e3ee9dda1cf.png"><br>遇到需要管理员权限才能复制至此文件夹时，点[继续]。<br><img src="https://pic3.superbed.cn/item/5dd89e818e0e2e3ee9dda1d2.png"><br>完成后VBA7.1文件夹中文件情况。<br><img src="https://pic.superbed.cn/item/5dd89fd98e0e2e3ee9ddd3ad.png"></li><li>重启Solidworks，已能正常运行。</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件安装问题 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Solidworks </tag>
+            
+            <tag> VBE6EXT-OLB </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>FastStone Capture 注册码</title>
+      <link href="2020/07/31/FastStone-Capture%E6%B3%A8%E5%86%8C%E7%A0%81/"/>
+      <url>2020/07/31/FastStone-Capture%E6%B3%A8%E5%86%8C%E7%A0%81/</url>
+      
+        <content type="html"><![CDATA[<p>企业版序列号：<br>name：bluman<br>serial/序列号/注册码：VPISCJULXUFGDDXYAUYF</p><p><del>FastStone Capture 注册码 序列号：<br>name/用户名：TEAM JiOO<br>key/注册码：CPCWXRVCZW30HMKE8KQQUXW</del></p><p>USER NAME:TEAM_BRAiGHTLiNG_2007<br>CODE:XPNMF-ISDYF-LCSED-BPATU<br>RPTME-IMDHD-MIEPX-VLXAW</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 其他 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> FastStoneCapture </tag>
+            
+            <tag> 激活码 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>SolidWorks异常-二次激活失败</title>
+      <link href="2020/07/31/SolidWorks%E4%BA%8C%E6%AC%A1%E6%BF%80%E6%B4%BB/"/>
+      <url>2020/07/31/SolidWorks%E4%BA%8C%E6%AC%A1%E6%BF%80%E6%B4%BB/</url>
+      
+        <content type="html"><![CDATA[<p>Solidworks安装破解成功，在使用一段时间后突然提示需要重新激活，试着执行先前的激活操作却无法激活。<br>找到并删除 C:\ProgramData\FLEXnet 下的SW_D_00481b00_tsf.data和SW_D_00481b00_tsf.data_backup.001两个文件，然后再按先前的激活操作进行激活即可。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件安装问题 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 激活 </tag>
+            
+            <tag> Solidworks </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Floxpress.dll注册失败</title>
+      <link href="2020/07/31/SolidWorks%E5%AE%89%E8%A3%85%E6%B3%A8%E5%86%8Cfloxpress-dll%E5%A4%B1%E8%B4%A5/"/>
+      <url>2020/07/31/SolidWorks%E5%AE%89%E8%A3%85%E6%B3%A8%E5%86%8Cfloxpress-dll%E5%A4%B1%E8%B4%A5/</url>
+      
+        <content type="html"><![CDATA[<p>安装SolidWorks2018时提示安装管理程序注册floxpress.dll失败<br><img src="https://ae01.alicdn.com/kf/H1fba7e5bb8ae441eba71c35b2c9bda50t.png"><br>网上查找该问题的解决措施，以下截图中的某些步骤有效。<br><img src="https://ae01.alicdn.com/kf/H085f406a3f804704a6d94df4b1d31a80y.png"></p><ol><li><p>删除 C:\Program Files，C:\Program Files(x86)，C:\Windows，C:\Documents 文件夹中所有的与SolidWorks有关的文件(文件名为SW或者SolidWorks等)。</p></li><li><p>清理注册表，删除HKEY LOCAL MACHINE-&gt;SOFTWARE和HKEY CURRENT USER-&gt;SOFTWARE中的SolidWorks文件夹。</p></li><li><p>卸载SW的所有先决条件，如Microsoft Visual、Microsoft SQL、NET.Frameworks。</p></li><li><p>卸载Bonjour。</p></li><li><p>下载Microsoft的FixIt应用程序并卸载一些在程序和功能选项卡 中不可见的Microsoft Visual。</p></li><li><p>禁用防火墙和相关杀毒软件。</p></li></ol><p>实际操作后发现步骤 1-3为有效步骤，通常执行步骤 1、2后问题就能解决，但我是在执行步骤 3后才安装成功的。步骤 6根据实际情况可以试试。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件安装问题 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Solidworks </tag>
+            
+            <tag> Floxpress.dll </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>PE安装Win10错误</title>
+      <link href="2020/07/31/PE%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85Win10%E5%A4%B1%E8%B4%A5/"/>
+      <url>2020/07/31/PE%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85Win10%E5%A4%B1%E8%B4%A5/</url>
+      
+        <content type="html"><![CDATA[<p>PE安装Win10系统时，GPT、BOOTMGR PBR、EFI PART三处均为绿灯，但还是应用系统映像失败，提示0x5:拒绝访问。<br><img src="https://ae01.alicdn.com/kf/H5a6d76a0a2474651861265fc1760f3768.jpg"><br><img src="https://ae01.alicdn.com/kf/H032321ec46944d4da773a2726041031eR.jpg"><br><img src="https://ae01.alicdn.com/kf/Hd5c06e96f5f34f4ca74e8e7898f62e81L.jpg"><br><img src="https://ae01.alicdn.com/kf/Hba8f4851901940acad02639bfe10a9c9D.jpg"><br>导致该情况的原因是C盘格式化不完全，原先系统未彻底清理，存在读写保护，解决办法是将C盘彻底格式化。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件安装问题 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 0x5拒绝访问 </tag>
+            
+            <tag> PE </tag>
+            
+            <tag> Win10 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
